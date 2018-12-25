@@ -1,0 +1,30 @@
+프로그램을 MacOS 환경에서 상대경로를 기반으로 작성해서 Windows 10 환경에서 제대로 작동하지 않았습니다.
+
+또한, Windows 10의 경로로 적으니 MacOS 에서 제대로 작동하지 않았습니다.
+
+그래서 프로그램을 OS 에 맞춰서 2가지를 보내니 확인하시는 OS 에 맞춰서 실행 해주시기 바랍니다.
+
+
+프로그램을 실행하시기 전에:
+	https://www.python.org 접속 후:
+		사용 OS를 확인을 하시고 python 3.6.2 를 설치해주세요.
+ 
+그 이후로...
+MacOS -> python 3.6.2 설치 후 :
+	terminal 실행 
+	다음을 입력해서 외부모듈을 설치해주시기 바랍니다:
+		pip3 install ecdsa, pip3 install pycryptodome pip3 install flask
+	이후 Dvote_MacOS 폴더안에 있는 프로그램을 실적 내역서에 있는 과정대로 진행해주세요.
+	(MacOS Mojave 에서 실행 가능함을 확인했습니다)
+
+Windows 10  -> python 3.6.2 설치:
+	custom 설치로 -> 전 사용자가 사용가능하게 설치(설치경로가 C:\Python36 으로 지정되면 됩니다)
+	내 PC 우 클릭 후 속성 클릭
+	고급 시스템 설정을 열어서 환경변수 설정의 시스템 변수에서:
+		Path 라는 이름의 변수를 열어서 새로 만들기 -> C:\Python36 추가,새로 만들기 -> C:\Python36\Scripts 추가
+		확인 후 다음을 입력해서 외부모듈을 설치해주시기 바랍니다:
+			pip3 install ecdsa, pip3 install pycryptodome pip3 install flask
+		이후 Dvote_Windows10 폴더안에 있는 실적내역서에 있는 과정대로 진행해주세요.
+		(#주의! VtChain.py 는 cmd 로 꼭 실행해주세요!)
+	(Windows 10 버전 1803, OS 빌드 17134.345 에서 실행 가능함을 확인하였습니다)
+	(그리고 꼭 USB 상에서 실행해주세요)
